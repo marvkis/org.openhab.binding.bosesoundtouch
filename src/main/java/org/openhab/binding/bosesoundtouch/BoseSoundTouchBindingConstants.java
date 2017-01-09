@@ -18,6 +18,7 @@ import org.eclipse.smarthome.core.thing.ThingTypeUID;
  * used across the whole binding.
  *
  * @author Christian Niessner - Initial contribution
+ * @author Thomas Traunbauer
  */
 public class BoseSoundTouchBindingConstants {
 
@@ -36,23 +37,24 @@ public class BoseSoundTouchBindingConstants {
             Arrays.asList(THING_TYPE_DEVICE));
 
     // List of all Channel ids
-    public static final String CHANNEL_CONTROL = "control";
+    public static final String CHANNEL_POWER = "power";
+    public static final String CHANNEL_VOLUME = "volume";
     public static final String CHANNEL_MUTE = "mute";
+    public static final String CHANNEL_OPERATIONMODE = "operationMode";
+    public static final String CHANNEL_ZONEINFO = "zoneInfo";
+    public static final String CHANNEL_PLAYER_CONTROL = "playerControl";
+    public static final String CHANNEL_ZONE_CONTROL = "zoneControl";
+    public static final String CHANNEL_PRESET = "preset";
+    public static final String CHANNEL_KEY_CODE = "keyCode";
     public static final String CHANNEL_NOWPLAYINGALBUM = "nowPlayingAlbum";
-    public static final String CHANNEL_NOWPLAYINGART = "nowPlayingArt";
+    public static final String CHANNEL_NOWPLAYINGARTWORK = "nowPlayingArtwork";
     public static final String CHANNEL_NOWPLAYINGARTIST = "nowPlayingArtist";
     public static final String CHANNEL_NOWPLAYINGDESCRIPTION = "nowPlayingDescription";
     public static final String CHANNEL_NOWPLAYINGITEMNAME = "nowPlayingItemName";
-    public static final String CHANNEL_NOWPLAYINGSOURCE = "nowPlayingSource";
     public static final String CHANNEL_NOWPLAYINGSTATIONLOCATION = "nowPlayingStationLocation";
     public static final String CHANNEL_NOWPLAYINGSTATIONNAME = "nowPlayingStationName";
     public static final String CHANNEL_NOWPLAYINGPLAYSTATUS = "nowPlayingPlayStatus";
     public static final String CHANNEL_NOWPLAYINGTRACK = "nowPlayingTrack";
-    public static final String CHANNEL_OPERATIONMODE = "operationMode";
-    public static final String CHANNEL_OPERATIONMODENUM = "operationModeNum";
-    public static final String CHANNEL_POWER = "power";
-    public static final String CHANNEL_VOLUME = "volume";
-    public static final String CHANNEL_ZONEINFO = "zoneInfo";
 
     // Device configuration parameters;
     public static final String DEVICE_PARAMETER_HOST = "DEVICE_HOST";
