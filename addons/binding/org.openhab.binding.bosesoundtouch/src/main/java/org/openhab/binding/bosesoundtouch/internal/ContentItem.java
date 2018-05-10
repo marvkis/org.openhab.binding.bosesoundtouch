@@ -64,11 +64,7 @@ public class ContentItem {
         if (getOperationMode() == OperationModeType.STANDBY) {
             return true;
         }
-        if (itemName.equals("") || source.equals("")) {
-            return false;
-        } else {
-            return true;
-        }
+        return !"".equals(itemName) && !"".equals(source);
     }
 
     /**
@@ -92,10 +88,7 @@ public class ContentItem {
             if (!isEqual(other.location, this.location)) {
                 return false;
             }
-            if (!isEqual(other.itemName, this.itemName)) {
-                return false;
-            }
-            return true;
+            return isEqual(other.itemName, this.itemName);
         }
         return super.equals(obj);
     }
